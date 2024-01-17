@@ -529,7 +529,8 @@ nav ul li a:hover::before {
 }
 
 #contact{
-    margin-top: 120%;
+    position: relative;
+    top: 120rem;
     display: flex;
     justify-content: space-between;
     padding-left: 15%;
