@@ -1,0 +1,723 @@
+*{ 
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+   /* background: url('Images/Background_Black.jpg'); 
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    */
+    background-color: black;
+    color: #fff;
+    overflow-y: scroll;
+    margin: 0; /* Add this to reset body margin */
+    
+
+}
+
+header{
+    position: relative;
+    left: 5%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.lobby{
+    margin-bottom: 10%;
+}
+.portrait {
+    width: 680px; /* Adjust portrait width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Apply fixed positioning */
+    top: 100px; /* Adjust top position */
+    left: 55%; /* Adjust left position */
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0)); /* Gradient color and direction */
+
+    /*
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+    */
+}
+    
+
+.portrait::before{
+   content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%; /* Adjust the height of the gradient */
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1)); /* Gradient color and direction */ 
+}
+
+.container {
+    padding: 10px 10%;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    
+    
+    
+}
+
+.logo {
+    width: 140px;
+    position: absolute; /* Apply fixed positioning */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+    top: 35px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Underline animation */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Adjust the underline height */
+    border-radius: 4px; /* Rounded underline */
+    background-color: 00B3FF; /* Underline color */
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out; /* Animation transition */
+}
+
+nav ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.content {
+    margin: auto;
+    position: relative;
+    max-width: 700px;
+    top: 350px;;
+    right: 13%;
+   
+
+}
+
+.content h2{
+    position: absolute;
+}
+
+.content h3 {
+    font-size: 2em;
+    color:#fff;
+    font-weight: 200;
+    transition: 0.5s;
+
+}
+
+.content h2{
+    font-size: 5.5em;
+    color:white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+
+.content h2 span {
+    color: 00B3FF;
+}
+
+.content p { 
+    font-size:1.2em;
+    color: white;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.social_media{
+    display: flex;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 3%; /* Adjust the right position */
+    padding: 10px; /* Adjust padding as needed */
+    gap: 14px;
+
+}
+
+.social_media li {
+    list-style: none;
+}
+
+
+.social_media li a {
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+
+}
+
+.social_media li a:hover {
+    color:00B3FF;
+}
+
+.links-text {
+    color: #fff; /* Text color */
+    font-size: 30px;
+    font-weight: bold; /* Text weight */
+    margin-right: 10px; /* Adjust margin as needed */
+    position:relative;
+    top:11px;
+}
+
+
+
+.about
+{
+    position: absolute;
+    top: 135%;
+    left: 40%;
+    line-height: 1.7;
+    font-size:20px;
+    max-width:50%;
+    width: 68%; /* Adjust the width as needed */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #242424; /* Optional: Set a background color */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    margin: auto;
+}
+
+.about p {
+    margin: 0px;
+   
+}
+
+#about {
+    padding: 80px 0;
+    padding-left: 80px;
+    margin-top: 48%;
+    position: absolute;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.picture_about{
+   width: 341px;
+    height: 404px;
+    border-radius: 15px;
+    position: absolute;
+    padding: 0;
+    
+}
+.picture_about img{
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 65%;
+    margin-left: 34.5%;
+}
+
+
+.about-col-2 p{
+   font-size: 20px;
+   margin-right: 14%;
+   
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+
+
+.tab-titles{
+    display: flex;
+    margin: 25px 0 100px;
+    
+   
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00B3FF;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-links.active-link::after{
+    width: 100%; 
+}
+
+/*margin was 10px but chnaged to 20px*/
+.tab-contents ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+.tab-contents ul li span{
+    color:#00B3FF;
+    font-size: 18px;
+    
+    
+
+}
+
+
+.tab-contents{
+    display: none;
+    position: relative;
+    top: -5%;
+    font-size: 18.5px;
+    
+}
+
+.tab-contents.exp{
+    line-height: 40px;
+}
+
+.tab-contents.edu{
+    line-height: 40px;
+}
+#skills{
+    margin-left: 35px;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+.icon-text{
+    line-height: 50px;
+    position: relative;
+   
+}
+
+.Python-image{
+    position: absolute;
+    left: -7.3%;
+    width: 83px;
+    height: 49px;
+}
+
+.Java-image{
+    position: absolute;
+    left: -7.5%;
+    top: 15.6%;
+    width: 73px;
+    height: auto;
+}
+
+.C-image{
+    position: absolute;
+    left: -6%;
+    width: 40px;
+    height: 45px;
+    flex-shrink: 0;
+    
+}
+
+.Java-Script{
+    position: absolute;
+    left: -6%;
+    width: 42px;
+    height: 42px;
+}
+
+.code-icon{
+    position: absolute;
+    left: -6%;;
+    font-size: 3em;
+}
+
+.UIC_logo{
+    width: 90px;
+    height: 90px;
+    display:flex;
+}
+
+/*----------------Projects----------------------*/
+.coding_lang{
+    color:#00B3FF;
+    font-size: 25px;
+}
+
+#projects{
+    padding: 30px 0;
+    margin-top: 120%;
+
+}
+.proj-title{
+    font-size: 60px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #fff;
+}
+
+.proj-icons{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    
+}
+.comp-img{
+    height: 300px;
+    width: 290px;
+}
+.myprojects{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info1 ul li{
+    list-style: none;
+
+}
+.project-info1{
+    padding: 30px;
+    border-radius: 15px; 
+    background-color: #4d4d4d81;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+.project-info1 h2{
+    color: white;
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+
+
+.project-info1 p{
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-right: 27%;
+   
+}
+
+.server_pic{
+    padding: 20px;
+    width: 522px;
+    height: 186px;
+    align-items: center;
+}
+
+.project2 { 
+    padding: 30px;
+    border-radius: 15px; 
+    background-color: #4d4d4d81;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-right: 35%;
+   
+}
+
+.project2 ul li{
+    list-style: none;
+}
+
+.project2 p{
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-left: 0%;
+
+}
+.project2 h2{
+    color: white;
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+.project2-pic{
+    padding: 20px;
+    width: 522px;
+    height: 237px;
+}
+
+.sonsuzProject{
+    padding: 30px;
+    border-radius: 15px; 
+    background-color: #4d4d4d81;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-right: 35%;
+}
+
+.sonsuzProject ul li {
+    list-style: none;
+}
+
+.sonsuzProject h2 {
+    color: white;
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+.sonsuzProject p{
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-left: 0%;
+}
+.tripmate_pic{
+    padding: 20px;
+    width: 570px;
+    height: 300px;
+    align-items: center;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    font-weight: 300;
+}
+
+#contact{
+    margin-top: 120%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+}
+.contact-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-left,
+.contact-right {
+    flex-basis: 45%; /* Adjust the flex-basis for both sections */
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    position: relative;
+    left: 45%;
+    bottom: 42%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p ion-icon {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #00B3FF;
+}
+
+.social-icons{
+    margin-top: 30px;
+   
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #00B3FF;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color:#fff;
+    transform: translateY(-5px);
+}
+
+form input, form textarea{
+    width: 65%;
+    box-sizing: border-box; /* Include padding and border in width */
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;;
+
+}
+
+.button1 {
+    position: absolute;
+    top: 100%;
+    right:33%;
+    width: 65.4%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff; /* Text color */
+    background-color: #00B3FF; /* Background color */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s;
+   
+
+}
+
+.button1:hover {
+    background-color: #318cc9; /* Hover background color */
+    color: #fff; /* Hover text color */ /* Hover border color */
+}
+
+.download_button{
+    display: block;
+    margin: 50px auto;
+    border: 1px solid #00B3FF;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    
+
+}
+
+#msg{
+    position: absolute;
+    bottom: -30%;
+    left: 2%;
+    color: #61b752;
+    margin-top: px;
+    display: block;
+}
+
+/*  -------------------------------css for small screens--------------------*/
+nav .mobile_icon{
+    display: none;
+}
+@media only screen and (max-width:600px){
+
+
+
+.header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+
+.header-text h1{
+        font-size: 30px;
+    }
+
+.portrait_size {
+        width: 100%; /* Set width to 100% for responsiveness */
+        max-width: 278.469px; /* Set a max-width if needed */
+        height: auto; /* Maintain aspect ratio */
+        flex-shrink: 0;
+        position: absolute;
+        top: 100px;
+        left: 10%;
+        background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0));
+    }
+
+
+.portrait::before{
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 15%; /* Adjust the height of the gradient */
+         background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1)); /* Gradient color and direction */ 
+     }
+    
+
+.lobby{
+    margin-bottom: 80%;
+}
+.container {
+    padding: 10px 10%;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+    nav .mobile_icon{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #00B3FF;
+        position: fixed;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 10px;
+    }
+
+    nav ul .mobile_icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}

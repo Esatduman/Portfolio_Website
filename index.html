@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<section class="lobby">
+    <div class="container">
+            <nav>
+                <img src="Images/Esats-logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="Images/Esat-Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <ion-icon class="mobile_icon" name="close-outline"></ion-icon>
+                </ul>
+                <ion-icon class="mobile_icon" name="menu-outline"></ion-icon>
+            </nav>
+        </div>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text">Esat</span></h2>
+        </div>
+        <div>
+            
+            <ul class="social_media">
+                <span class="links-text">Links</span>
+                <li>
+                    <a href="https://github.com/Esatduman" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/esat-duman/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="portrait">
+            <img src="Images/Esat-portrait.png"  class="portrait_size"alt="Esats portrait temp">
+            </div>
+</section>
+<!-------------------------------------------About me------------------------------------>
+<div id="about">
+    <div class="contain-about">
+        <div class="row">
+            <div class="picture_about">
+                <img src="Images/Esat-Duman 1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm Esat Duman a senior college student with a passion for technology
+                   and a drive to become a software enginner. Currently studying Computer Science 
+                   at the University Of Illinois at Chicago, I'm dedicated to improving my craft 
+                   and always learning new technologies.</p>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><img src="Images/Python-Logo.png" class="Python-image"><span class="icon-text">Python/SQL</ion-icon></span><br>"experience in working with databases 
+                        and diverse applications and projects"</li>
+                        <li><img src="Images/Java-Logo.png" class="Java-image"><span class="icon-text">Java</span><br>"Built Java games and apps with server-client architecture, showcasing expertise in dynamic software solutions."</li>
+                        <li><img src="Images/C++_logo 1.png" class="C-image"><span class="icon-text">C/C++</span><br>"Programmed projects with extensive use of data structures and shell programming"</li>
+                        <li><img src="Images/JavaScript-Logo.png" class="Java-Script"><span class="icon-text">Java Script</span><br>"Used to build websites for past internship"</li>
+                        <li><ion-icon name="code-slash-outline" class="code-icon"></ion-icon><span class="icon-text">Testing</span><br>"Performing unit testing on all projects done in various programming languages"</li>
+                    </ul>
+                </div>
+                <div class="tab-contents exp" id="experience">
+                    <ul>
+                        <li><span class="icon-text">Software Engineering Internship</span><br>"As a Software Engineering Intern at a start up called Sonsuz Design, I collaborated on 'Trip Mate,' an innovative travel planning website, contributing to both front-end and back-end development using
+                             HTML, CSS, JavaScript, Django, and Python. 
+                             I enhanced user security by implementing a robust password authentication system and integrated external APIs for real-time travel data."
+                            </li>
+                            <img src="Images/Sonsuz-Design.png">
+                    </ul>
+                </div>
+                <div class="tab-contents edu" id="education">
+                    <ul>
+                        <img src="Images/UIC-Logo.png" class="UIC_logo">
+                        <li><span class="icon-text">University Of Illinois at Chicago</span><br>Bachelors of Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------Projects-------------------------------------->
+<section class="myprojects">
+<div id="projects">
+    <div class="container">
+        <h1 class="proj-title">My Projects</h1>
+        <div class="project-list">
+            <div class="sonsuzProject">
+                <ul>
+                    <li>
+            <a href="https://github.com/Esatduman/Client-Server-HangMan" target="_blank">
+                <img src="Images/Tripmate .png" class="tripmate_pic">
+                <h2> TripMate </h2>
+            </a>
+                <p><span class="coding_lang">HTML/CSS/JavaScript/Python</span></p>
+                <p> For my Internship I programmed pivotal features for Tripmmate at Sonsuz Design, including seamless API integration, robust password authentication, and the design and implementation of the Car Rental section and Home page. Contributed to creating a comprehensive and user-centric travel planning platform.
+                </p>
+            
+                    </li>
+                </ul>
+            </div>
+            <!----------------------Icons for projects -------------------->
+            <div class="proj-icons"><img src="Images/programming.png" class="comp-img"></div>
+            <!---------------------------------------------------------------------->
+            <div class="project-info1">
+                
+                <ul>
+                    <li>
+            <a href="https://github.com/Esatduman/Client-Server-HangMan" target="_blank">
+                <img src="Images/Client and Server.JPG" class="server_pic">
+                <h2> Client-Server Hangman Game</h2>
+            </a>
+                <p><span class="coding_lang">Java</span></p>
+                <p>The Hangman Game with Client-Server Interaction project was developed as part of a Programming Design course. The primary objective was to design a networked Hangman game implementing client-server communication.
+                </p>
+            
+                    </li>
+                </ul>
+            </div>
+            <div class="project2">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Esatduman/CTA-App-Analysis" target="_blank">
+                        
+                        <img src="Images/CTA_project.png" class="project2-pic">
+                        <h2>CTA App Analysis</h2>
+                        </a>
+                        <span class="coding_lang">Python/SQL</span>
+                        <p> I utilized this project as an opportunity to learn Python and SQL. 
+                            I extracted data from the CTA database using SQL and tailored its display to meet user needs. 
+                            This involved implementing multiple commands and options, enabling users to efficiently search and retrieve information from the database.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!----------------------------CONTACT ME------------------------------------------------->
+
+<div id="contact">
+    <div class="contact-cont">
+        <div class="row-1">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><ion-icon name="paper-plane"></ion-icon>Esatduman214@gmail.com</p>
+                <p><ion-icon name="call"></ion-icon>773-961-9021</p>
+                <div class="social-icons">
+                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/esat-duman/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-discord"></ion-icon></a>
+                </div>
+                
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button1">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+<div class="copyright">
+    <p>Copyright @ Programmed By Esat Duman</p>
+</div>
+<!----------------------JAVA-SCRIPT FOR  TYPE ANIMATION---------------------------------->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    let typingeffect = new Typed("#text", { 
+        strings : ["", " a Developer", "a Mentor","Esat Duman"],
+        typeSpeed:100,
+        backSpeed:50,
+        backDelay:1000,
+    });
+    </script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+           
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-OQv4RZGHGiA_S9FO3IuOAWVpYl9O3V_-0qVZinwDrGDi6kSFVadcopNCKZOhB8o6eg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
