@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     */
+    
     background-color: black;
     color: #fff;
     overflow-y: scroll;
@@ -22,15 +23,12 @@ body {
 }
 
 header{
-    position: relative;
-    left: 5%;
-    margin-left:auto;
-    margin-right:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.lobby{
-    margin-bottom: 10%;
-}
+
 .portrait {
     width: 680px; /* Adjust portrait width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -57,13 +55,9 @@ header{
 }
 
 .container {
-    padding: 10px 10%;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: absolute;
-    
-    
-    
 }
 
 .logo {
@@ -76,14 +70,15 @@ header{
 
 
 nav ul {
-    list-style: none;
     display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 40%; /* Add margin to the right to separate links from the logo */
 }
 
 nav ul li {
-    margin: 0 20px;
-    top: 35px;
-    position: relative;
+    margin: 45px 20px;
+    
 }
 
 nav ul li a {
@@ -118,7 +113,7 @@ nav ul li a:hover::before {
     margin: auto;
     position: relative;
     max-width: 700px;
-    top: 350px;;
+    top: 250px;
     right: 13%;
    
 
@@ -192,20 +187,11 @@ nav ul li a:hover::before {
 
 
 
-.about
-{
-    position: absolute;
-    top: 135%;
-    left: 40%;
-    line-height: 1.7;
-    font-size:20px;
-    max-width:50%;
-    width: 68%; /* Adjust the width as needed */
-    padding: 20px; /* Add padding inside the box */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    background-color: #242424; /* Optional: Set a background color */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-    margin: auto;
+#about {
+    padding: 80px 0;
+    padding-left: 10%; /* Adjust the left padding as needed */
+    margin-top: 48%;
+    position: relative;
 }
 
 .about p {
@@ -229,7 +215,7 @@ nav ul li a:hover::before {
 
 
 .picture_about{
-   width: 341px;
+    width: 341px;
     height: 404px;
     border-radius: 15px;
     position: absolute;
@@ -529,8 +515,9 @@ nav ul li a:hover::before {
 }
 
 #contact{
+    margin-bottom: 121%;
     position: relative;
-    top: 120rem;
+    top: 119rem;
     display: flex;
     justify-content: space-between;
     padding-left: 15%;
