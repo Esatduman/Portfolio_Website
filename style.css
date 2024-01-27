@@ -631,13 +631,16 @@ form input, form textarea{
     bottom: -30%;
     left: 2%;
     color: #61b752;
-    margin-top: px;
     display: block;
 }
 
 /*  -------------------------------css for small screens--------------------*/
 nav .mobile_icon{
     display: none;
+}
+
+@media screen and (min-width: 1366px) {
+    
 }
 @media only screen and (max-width:600px){
 
